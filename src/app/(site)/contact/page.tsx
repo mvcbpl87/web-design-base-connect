@@ -8,7 +8,7 @@ export default function ContactPage(){
  <div className="relative py-20 px-20 space-y-[10rem] ">
   <div className="grid grid-cols-2 gap-[1rem] relative">
     <div className="h-full">
-      <div className="flex flex-col space-y-[2rem] pr-[10rem] sticky top-0">
+      <div className="flex flex-col space-y-[2rem] pr-[10rem] sticky top-20">
        <h2 className="text-desktop-h2 leading-desktop-h2 font-bold">Get in Touch</h2>
        <p className="text-lg">
            If you have any questions or want to get onboarded. 

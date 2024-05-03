@@ -71,9 +71,9 @@ export function NavigationLinks(){
      <Link href={route.AboutUs}>About Us</Link>
      </NavigationMenuTrigger>
    </NavigationMenuItem>
-   <NavigationMenuItem>
+   {/* <NavigationMenuItem>
      <NavigationMenuTrigger className="text-regular">Why Us?</NavigationMenuTrigger>
-   </NavigationMenuItem>
+   </NavigationMenuItem> */}
    <NavigationMenuItem>
      <NavigationMenuTrigger className="text-regular" >
       <Link href={route.Pricing}>Pricing</Link>

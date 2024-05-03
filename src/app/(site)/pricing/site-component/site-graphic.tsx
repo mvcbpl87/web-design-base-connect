@@ -20,8 +20,8 @@ const Information = [
 
 export function SiteGraphic(){
  return(
- <div className="relative pb-20 h-full grid grid-cols-3 gap-[6rem] justify-center items-center">
-  <div className="col-span-2 flex flex-col gap-4">
+ <div className="relative pb-20 h-full grid grid-cols-3 gap-[2rem] justify-center items-center">
+  <div className="col-span-2 flex flex-col gap-4 pr-10">
     <h3 className="text-desktop-h3 leading-desktop-h3 font-bold ">
         Your money goes much further with a virtual assistant.
     </h3>
