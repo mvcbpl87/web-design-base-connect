@@ -27,7 +27,7 @@ const ItemContent = ({source, alt, title, description,size}:ItemContentProps) =>
 export default function SiteSection2(){
 
  return(
- <div className="relative h-screen grid grid-cols-2 px-20 py-[8rem] gap-x-[8rem] ">
+ <div className="relative h-[864px] grid grid-cols-2 px-20 py-[8rem] gap-x-[8rem] ">
  <div className="flex flex-col justify-between ">
  <TitleCard
     badge="Efficiency"
