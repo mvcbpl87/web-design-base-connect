@@ -1,10 +1,17 @@
 @tailwind base;
   @tailwind components;
   @tailwind utilities;
-/* *{
-  font-family:' Helvetica Now Display';
-  font-display: ;
-} */
+
+  @font-face {
+    font-family: 'OpenSans';
+    src: url('/font/HelveticaNowDisplay-Light.ttf');
+    src: url('/font/HelveticaNowDisplay-Medium.ttf');
+    font-weight: 400;
+    font-style:normal
+  }
+  *{
+    font-family:OpenSans, 'Times New Roman', Times, serif;
+  }
   @layer base {
     :root {
       --background: 0 0% 100%;
@@ -76,5 +83,6 @@
     body {
       @apply bg-background text-foreground;
     }
+    
 
   }
