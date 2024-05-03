@@ -18,7 +18,7 @@ import { CustomLinkButton } from "../global/link-button"
 
 export default function NavigationBar({}){
  return(
- <div className="flex items-center justify-between h-[72px] py-4 px-20 bg-background">
+ <div className="hidden md:flex items-center justify-between h-[72px] py-4 px-20 bg-background">
    <Link
     href={route.Home}>
    <ImageTemplate 

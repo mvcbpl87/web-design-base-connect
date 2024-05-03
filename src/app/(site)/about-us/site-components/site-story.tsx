@@ -1,6 +1,6 @@
 export default function SiteStory(){
  return( 
- <div className="relative grid grid-cols-1 md:grid-cols-2 gap-[2rem] py-[10rem]">
+ <div className="relative grid grid-cols-1 md:grid-cols-2 gap-[2rem] py-20">
     <div>
         <h2 className="text-desktop-h2 leading-desktop-h2 font-bold">Our Story</h2>
     </div>

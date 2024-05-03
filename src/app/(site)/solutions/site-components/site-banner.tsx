@@ -6,7 +6,7 @@ export default function SiteBanner(){
  return(
  <div className="relative  ">
     <ImageTemplate 
-     size="min-h-screen"
+     size="h-[476px]"
      fit="object-cover"
      alt="Banner-site-1"
      source = {_constant.ImageUrl}
@@ -16,8 +16,8 @@ export default function SiteBanner(){
       Streamline Your Operations
      </h1>
      <p className="text-white text-xl text-start px-20 ">
-         Discover the benefits of outsourcing administrative tasks to our experienced team.<br/>
-          Increase efficiency and focus on what matters most for your business.
+         Discover the benefits of outsourcing administrative tasks to our experienced team.
+         Increase efficiency and focus on what matters most for your business.
      </p>
      </div>
  </div>

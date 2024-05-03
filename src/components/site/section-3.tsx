@@ -18,7 +18,7 @@ export default function SiteSection3(){
      title = "Our Services: Simplifying Your Workload and Boosting Productivity"
      subheadings="Our virtual assistants provide professional administrative support, allowing you to focus on what matters most."
    />
-  <div className="grid grid-cols-2">
+  <div className="grid grid-cols-2 gap-[1rem]">
     <div className="flex flex-col gap-2">
       <h2 className="text-desktop-h2 leading-desktop-h2 font-bold">50%</h2>
       <span className="text-regular">
