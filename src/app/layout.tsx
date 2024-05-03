@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import { LayoutWrapper } from "@/components/layout/LayoutWrapper";
 import NavigationBar from "@/components/navigation";
 import NavigationFooter from "@/components/navigation/footer";
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
+const font = DM_Sans({subsets:['latin']})
 
 export const metadata: Metadata = {
   title: "AI SaaS",
@@ -18,8 +19,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <LayoutWrapper>
+      <body className={font.className}>
+        <LayoutWrapper className="font-custom">
         <NavigationBar/>
         {children}
         <NavigationFooter/>

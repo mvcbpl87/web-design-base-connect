@@ -54,7 +54,7 @@ export default function SiteSection2(){
   <Link href={'#'} className={cn(buttonVariants({variant:"outline"}), 'rounded-none text-regular p-6 border-muted-foreground border-[1px] hover:bg-accent-base hover:text-white')}>View Plans</Link>
   </div>
  </div>
- <div className=" flex flex-col justify-center  bg-red-200 relative">
+ <div className=" flex flex-col justify-center  relative">
  <ImageTemplate
  size="h-full absolute w-full"
  source = "https://images.unsplash.com/photo-1491975474562-1f4e30bc9468?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
