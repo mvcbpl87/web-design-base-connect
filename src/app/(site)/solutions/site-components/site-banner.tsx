@@ -6,7 +6,7 @@ export default function SiteBanner(){
  return(
  <div className="relative  ">
     <ImageTemplate 
-     size="h-[476px]"
+     size="h-[358px]"
      fit="object-cover"
      alt="Banner-site-1"
      source = {_constant.ImageUrl}

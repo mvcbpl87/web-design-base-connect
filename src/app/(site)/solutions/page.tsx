@@ -50,7 +50,7 @@ export default function SolutionsPage(){
  <div className="relative ">
  <SiteBanner/>
   <div className="py-20 px-20 space-y-[6rem] ">
-    <div className="grid grid-cols-2 py-20">
+    <div className="grid grid-cols-2 py-10">
         <h2 className="text-desktop-h2 leading-desktop-h2 font-bold">What can we help you with?</h2>
         <p className="text-lg font-normal">
             Our outsourcing services can help your company focus on core tasks by taking care of administrative responsibilities. 
