@@ -4,18 +4,37 @@
 
   @font-face {
     font-family: 'Helvetica Now Display';
-    src: url('/font/HelveticaNowDisplay-Light.ttf');
     src: url('/font/HelveticaNowDisplay-Medium.ttf');
     font-weight: 400;
     font-style:normal
   }
+  @font-face {
+    font-family: 'Helvetica Now Display Regular';
+    src: url('/font/HelveticaNowDisplay-Regular.ttf');
+    font-weight: 400;
+    font-style:normal
+  }
+  @font-face {
+    font-family: 'Helvetica Now Display Light';
+    src: url('/font/HelveticaNowDisplay-Light.ttf');
+    font-weight: 400;
+    font-style:normal
+  }
   *{
-    font-family:'Helvetica Now Display', Arial, Helvetica, sans-serif;
+    font-family:'Helvetica Now Display Regular', Arial, Helvetica, sans-serif;
     letter-spacing: 2px;
   }
+  p, div, span{
+    font-family: 'Helvetica Now Display Regular';
+    font-weight:400;
+  }
+  
   h1,h2,h3,h4,h5,h6{
+    font-family: 'Helvetica Now Display';
+    /* Tailwind decrease font-weight by default, now increase to 600  */
     font-weight: 600;
   }
+  
   @layer base {
     :root {
       --background: 0 0% 100%;

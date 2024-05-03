@@ -12,23 +12,23 @@ type FaqsListType = {
 const FaqsList:FaqsListType[] = [
     {
         'question': 'How much does it cost?',
-        'answer': 'answer 1'
+        'answer': 'Stay tuned'
     },
     {
         'question': 'Are there any hidden fees?',
-        'answer': 'answer 2'
+        'answer': 'Stay tuned'
     },
     {
         'question': 'Do you offer discounts?',
-        'answer': 'answer 3'
+        'answer': 'Stay tuned'
     },
     {
         'question': 'How can I pay?',
-        'answer': 'answer 4'
+        'answer': 'Stay tuned'
     },
     {
         'question': 'What if I need additional services?',
-        'answer': 'asnwer 5'
+        'answer': 'Stay tuned'
     }
 ]
 
@@ -66,7 +66,7 @@ function AccordionFAQ({list}:AccordionFAQProps){
     value={`item-${index+1}`} 
     className="border-black/20 dark:border-white/20">
     <AccordionTrigger className="text-lg font-bold px-4">{item.question}</AccordionTrigger>
-    <AccordionContent className="px-4 text-base my-4">
+    <AccordionContent className="px-4 text-base my-4 italic text-muted-foreground/50">
       {item.answer}
     </AccordionContent>
    </AccordionItem>

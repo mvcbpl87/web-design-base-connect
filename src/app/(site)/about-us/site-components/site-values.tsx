@@ -24,8 +24,8 @@ const ItemContentList = [
 ]
 export default function SiteValues(){
  return(
- <div className="relative grid grid-cols-1 md:grid-cols-2 gap-[5rem] pb-20">
-  <div className=" flex flex-col relative gap-[2rem] ">
+ <div className="relative grid grid-cols-1 md:grid-cols-2 gap-[2rem] pb-20">
+  <div className=" flex flex-col relative gap-[2rem] pr-20 ">
     <h2 className="text-desktop-h2 leading-desktop-h2 font-bold">Our Values</h2>
     <div className="h-[400px]  relative">
     <ImageTemplate
@@ -36,8 +36,8 @@ export default function SiteValues(){
     />
     </div>
   </div>
-  <div className="">
-     <p className="text-lg">
+  <div className="flex flex-col justify-between">
+     <p className="text-lg ">
         At Base Connect, our values aren{`'`}t just words - they{`'`}re the backbone of how we work. 
         We believe in putting our clients first, delivering quality work, and being honest and straightforward. <br/><br/>
 
