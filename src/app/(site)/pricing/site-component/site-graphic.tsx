@@ -29,7 +29,7 @@ export function SiteGraphic(){
      Getting a virtual assistant through Base Connect can save you lots of cash. 
      On average, our clients <span className="font-bold">save about 90% </span>compared to hiring a full-time assistant. <br/><br/>
  
-     Here's the big difference: you only  pay for the actual work your Base Connect virtual assistant does. 
+     Here{`'`}s the big difference: you only  pay for the actual work your Base Connect virtual assistant does. 
      No extra costs for coffee breaks, chatting, holidays, or sick days. <br/><br/>
  
      Considering the average salary of a skilled executive assistant could be <span className="font-bold">$60,500</span> in 2024, 

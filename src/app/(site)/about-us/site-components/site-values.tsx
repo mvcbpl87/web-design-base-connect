@@ -38,12 +38,12 @@ export default function SiteValues(){
   </div>
   <div className="">
      <p className="text-lg">
-        At Base Connect, our values aren't just words - they're the backbone of how we work. 
+        At Base Connect, our values aren{`'`}t just words - they{`'`}re the backbone of how we work. 
         We believe in putting our clients first, delivering quality work, and being honest and straightforward. <br/><br/>
 
         We are committed to taking care of your tasks effectively and value the teamwork it 
         takes to support and grow your business. These values guide us in all that 
-        we do - every task, every project, every day. Here's how we make it happen:<br/><br/>
+        we do - every task, every project, every day. Here{`'`}s how we make it happen:<br/><br/>
      </p>
      <div className="grid grid-cols-2 gap-4">
      { ItemContentList.map( (item, index)=>(
