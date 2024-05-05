@@ -22,7 +22,7 @@ export default function NavigationBar({}){
    <Link
     href={route.Home}>
    <ImageTemplate 
-     size = "w-[200px] h-[30px] "
+     size = "w-[172px] h-[22px] md:w-[200px] md:h-[30px] "
      source="/assets/base-connect-logo.svg"
      alt="Company logo"
     />

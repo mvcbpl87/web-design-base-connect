@@ -13,7 +13,7 @@ type CustomLinkButtonType = {
 export function CustomLinkButton({path, label, variant}:CustomLinkButtonType){
  const style = cn(
     buttonVariants({variant:"outline"}),{
-    'bg-accent-base border-none text-background rounded-none font-regular p-6': variant === variantEnum.primary,
+    'bg-accent-base border-none text-background rounded-none font-regular p-4 md:p-6': variant === variantEnum.primary,
     'rounded-none text-regular p-6 border-muted-foreground border-[1px] hover:bg-accent-base hover:text-white' 
     : variant=== variantEnum.secondary || !variant || variant == undefined
 

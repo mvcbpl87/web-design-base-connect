@@ -1,4 +1,5 @@
 import { ImageTemplate } from "@/components/global/image-template"
+import { cn } from "@/lib/utils"
 
 const _constant = {
     imageUrl: 'https://images.unsplash.com/photo-1483058712412-4245e9b90334?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
@@ -22,12 +23,16 @@ const ItemContentList = [
  },
  
 ]
-export default function SiteValues(){
+type Props = {
+   className?:string
+}
+export default function SiteValues({className}:Props){
+ const style = cn('relative grid grid-cols-1 md:grid-cols-2 gap-[2rem]', className);
  return(
- <div className="relative grid grid-cols-1 md:grid-cols-2 gap-[2rem] pb-20">
-  <div className=" flex flex-col relative gap-[2rem] pr-20 ">
-    <h2 className="text-desktop-h2 leading-desktop-h2 font-bold">Our Values</h2>
-    <div className="h-[400px]  relative">
+ <div className={style}>
+  <div className=" flex flex-col relative gap-[2rem] md:pr-20 ">
+    <h2 className="text-mobile-h2 leading-mobile-h2 md:text-desktop-h2 md:leading-desktop-h2 font-bold">Our Values</h2>
+    <div className="h-[320px] md:h-[400px] relative">
     <ImageTemplate
         size= "absolute w-full h-full"
         fit="object-cover"
@@ -36,8 +41,8 @@ export default function SiteValues(){
     />
     </div>
   </div>
-  <div className="flex flex-col justify-between">
-     <p className="text-lg ">
+  <div className="flex flex-col justify-between  ">
+     <p className="text-base md:text-lg">
         At Base Connect, our values aren{`'`}t just words - they{`'`}re the backbone of how we work. 
         We believe in putting our clients first, delivering quality work, and being honest and straightforward. <br/><br/>
 
@@ -45,7 +50,7 @@ export default function SiteValues(){
         takes to support and grow your business. These values guide us in all that 
         we do - every task, every project, every day. Here{`'`}s how we make it happen:<br/><br/>
      </p>
-     <div className="grid grid-cols-2 gap-4">
+     <div className="grid md:grid-cols-2 gap-4 pt-10 md:pt-0">
      { ItemContentList.map( (item, index)=>(
         <ItemContent
          key ={`ItemValues-${index+1}`}

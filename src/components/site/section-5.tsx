@@ -5,7 +5,8 @@ import { GettingStartedBanner } from "./getting-started-banner";
 
 export default function SiteSection5(){
  return(
- <div className="relative px-20 py-12 space-y-[4rem]">
+ <div className="relative p-10 md:px-20 space-y-[8rem]">
+  <div className="space-y-[4rem]">
    <TitleCard
     className="justify-center items-center"
     badge="Flexible price plans & packages"
@@ -13,7 +14,8 @@ export default function SiteSection5(){
     subheadings="A real assistant, dedicated to you."
    />    
   <PricingTable/>
-  <GettingStartedBanner className="py-[10rem]"/>
+  </div>
+  <GettingStartedBanner className="py-20"/>
  </div>)
 }
 

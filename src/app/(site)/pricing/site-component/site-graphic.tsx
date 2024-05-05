@@ -1,4 +1,5 @@
 import { Progress } from "@/components/ui/progress"
+import { cn } from "@/lib/utils"
 
 const Information = [
     {
@@ -17,15 +18,18 @@ const Information = [
         color: 'bg-accent-base'
     }
 ]
-
-export function SiteGraphic(){
+type Props = {
+  className?:string
+}
+export function SiteGraphic({className}:Props){
+ const style = cn("relative h-full grid grid-cols-1 md:grid-cols-3 gap-[2rem] justify-center items-center", className)
  return(
- <div className="relative pb-20 h-full grid grid-cols-3 gap-[2rem] justify-center items-center">
-  <div className="col-span-2 flex flex-col gap-4 pr-10">
-    <h3 className="text-desktop-h3 leading-desktop-h3 font-bold ">
+ <div className={style}>
+  <div className="md:col-span-2 flex flex-col text-start md:text-center gap-4 pb-10 md:pr-10 md:pb-0">
+    <h3 className="text-mobile-h3 leading-mobile-h3  md:text-desktop-h3 md:leading-desktop-h3 font-bold ">
         Your money goes much further with a virtual assistant.
     </h3>
-    <p className="text-large">
+    <p className="text-base md:text-large">
      Getting a virtual assistant through Base Connect can save you lots of cash. 
      On average, our clients <span className="font-bold">save about 90% </span>compared to hiring a full-time assistant. <br/><br/>
  

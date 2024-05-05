@@ -4,18 +4,22 @@ const _constant = {
 }
 export default function SiteBanner(){
  return(
- <div className="relative  ">
+ <div className="relative ">
     <ImageTemplate 
-     size="h-[358px]"
+     size=" h-[358px]"
      fit="object-cover"
      alt="Banner-site-1"
      source = {_constant.ImageUrl}
      />
-    <div className="bg-black/40 absolute inset-0 grid grid-cols-2 justify-center items-center space-y-[2rem]">
-     <h1 className="text-wrap text-start text-white text-desktop-h1 leading-desktop-h1 px-20 ">
+    <div className="bg-black/40 absolute inset-0 flex flex-col gap-[1rem]
+    md:gap-[0rem]
+    md:grid md:grid-cols-2 justify-center items-center md:space-y-[2rem]">
+     <h1 className="text-wrap text-center md:text-start text-white
+      text-mobile-h2 leading-mobile-h2
+      md:text-desktop-h1 md:leading-desktop-h1 px-10 md:px-20 ">
       Streamline Your Operations
      </h1>
-     <p className="text-white text-xl text-start px-20 ">
+     <p className="text-white text-base md:text-xl text-center md:text-start px-10 md:px-20 ">
          Discover the benefits of outsourcing administrative tasks to our experienced team.
          Increase efficiency and focus on what matters most for your business.
      </p>

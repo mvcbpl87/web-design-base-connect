@@ -52,9 +52,13 @@ const metrics = [
     fullTimeHire: 'No',
  }
 ]
-export function MetricTable(){
+type Props = {
+   className?:string
+}
+export function MetricTable({className}:Props){
+ const style = cn("relative h-full space-y-[4rem]", className)
  return(
- <div className="relative h-full pb-20 space-y-[4rem]">
+ <div className={style}>
   <div className="w-full flex flex-col space-y-[1.2rem] justify-center items-center">
    <h2 className="text-desktop-h2 font-bold leading-desktop-h2">{information.title}</h2>
    <p className="text-medium font-normal w-[40%] text-center">{information.description}</p>

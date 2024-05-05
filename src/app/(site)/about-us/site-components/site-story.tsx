@@ -1,11 +1,16 @@
-export default function SiteStory(){
+import { cn } from "@/lib/utils"
+type Props = {
+   className?:string
+}
+export default function SiteStory({className}:Props){
+ const style = cn("relative grid grid-cols-1 md:grid-cols-2 gap-[2rem] ",className)
  return( 
- <div className="relative grid grid-cols-1 md:grid-cols-2 gap-[2rem] py-20">
+ <div className={style}>
     <div>
-        <h2 className="text-desktop-h2 leading-desktop-h2 font-bold">Our Story</h2>
+        <h2 className="text-mobile-h2 leading-mobile-h2 md:text-desktop-h2 md:leading-desktop-h2 font-bold">Our Story</h2>
     </div>
     <div>
-     <p className="text-lg">
+     <p className="text-base md:text-lg">
         Here at Base Connect, we get it. Running a business is no walk in the park. With so many moving parts, 
         it can be challenging to juggle them all. That{`'`}s exactly why we built this agency.<br/><br/>
 

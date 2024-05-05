@@ -49,16 +49,18 @@ export default function SolutionsPage(){
  return(
  <div className="relative ">
  <SiteBanner/>
-  <div className="py-20 px-20 space-y-[6rem] ">
-    <div className="grid grid-cols-2 py-10">
-        <h2 className="text-desktop-h2 leading-desktop-h2 font-bold">What can we help you with?</h2>
-        <p className="text-lg font-normal">
+  <div className="py-20 px-10 md:px-20 space-y-[4rem] md:space-y-[6rem] ">
+    <div className="grid md:grid-cols-2 gap-[1rem] md:pb-20 md:gap-[0rem] md:py-10">
+        <h2 className="text-mobile-h2 leading-mobile-h2 
+         md:text-desktop-h2 lmd:eading-desktop-h2 font-bold">
+         What can we help you with?</h2>
+        <p className="text-base md:text-lg font-normal">
             Our outsourcing services can help your company focus on core tasks by taking care of administrative responsibilities. 
             From managing emails to scheduling appointments, we have you covered.
         </p>
     </div>
     {/* <---- Solution Cards -----> */}
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-x-[4rem] gap-y-[8rem]">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-[4rem] md:gap-y-[8rem]">
     { SolutionItemList.map( (solution, index)=>(
         <SolutionCard
          key ={`solutionCard-${index+1}`}
@@ -70,7 +72,7 @@ export default function SolutionsPage(){
     ))}
     </div>
     <div className="flex gap-[1rem] flex-col">
-    <span className="text-regular font-bold text-accent-base">Not sure if we can help?
+    <span className="text-base font-bold text-accent-base">Not sure if we can help?
     </span>
     <div>
         <Link href={'#'} className={cn(buttonVariants({variant:'ghost'}), 
@@ -101,7 +103,7 @@ function SolutionCard({
 }: SolutionCardType){
  return(
  <div className="space-y-[1rem]">
-    <div className="relative h-[320px] ">
+    <div className="relative h-[198px] md:h-[240px] ">
         <ImageTemplate
             source={imageUrl}
             alt="image-solutions"
@@ -109,7 +111,8 @@ function SolutionCard({
             fit= 'object-cover'
         />
     </div>
-    <h4 className="text-desktop-h4 leading-desktop-h4 font-bold">{title}</h4>
+    <h4 className="text-mobile-h4 leading-mobile-h4
+    md:text-desktop-h4 md:leading-desktop-h4 font-bold">{title}</h4>
     <div className="flex flex-col gap-1">
      <span className="font-bold text-base">{subtitle}</span>
      <p className="text-base font-normal">{description}</p>

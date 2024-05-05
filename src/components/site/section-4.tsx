@@ -69,15 +69,15 @@ export default function SiteSection4(){
  const IconSize = 'h-12 w-12';
 
  return(
- <div className="relative  px-20 py-20 space-y-[4rem]">
-  <div className="w-[840px]">
+ <div className="relative p-10 md:px-20 space-y-[4rem]">
+  <div className="md:w-[840px]">
     <TitleCard
      badge="Efficient Solutions"
      title="Streamline Your Administrative Tasks with Our Services"
      subheadings="We offer a range of solutions to help businesses save time and increase productivity. Our team of experienced virtual assistants can handle various administrative tasks, allowing you to focus on core business activities."
     />
   </div>
-  <div className="grid grid-cols-3 gap-[2rem]">
+  <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-[2rem]">
     { ItemList.map( (item,index)=>(
         <ItemContent
          size={item.size? item.size : IconSize}

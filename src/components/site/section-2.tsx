@@ -27,14 +27,16 @@ const ItemContent = ({source, alt, title, description,size}:ItemContentProps) =>
 export default function SiteSection2(){
 
  return(
- <div className="relative h-[864px] grid grid-cols-2 px-20 py-[8rem] gap-x-[8rem] ">
- <div className="flex flex-col justify-between ">
+ <div className="relative md:h-[840px] grid grid-cols-1 md:grid-cols-2 
+ p-10
+ md:px-20 md:py-[6rem] gap-[2rem] md:gap-[8rem] ">
+ <div className="flex flex-col justify-between space-y-2 md:space-y-0">
  <TitleCard
     badge="Efficiency"
     title = "Streamline Your Administrative Tasks with Ease"
     subheadings="Our personalized virtual assistant services provide efficient solutions for all your administrative tasks. With a dedicated team of professionals, we ensure that your tasks are handled with utmost care and precision."
   />
-  <div className="flex gap-4">
+  <div className="flex gap-4 flex-col md:flex-row pt-10 md:pt-0 ">
     <ItemContent
      size="h-12 w-12"
      title = "Save Time"
@@ -50,11 +52,11 @@ export default function SiteSection2(){
      alt="icon"
     />
   </div>
-  <div>
+  <div className="pt-4 md:pt-0">
   <Link href={'#'} className={cn(buttonVariants({variant:"outline"}), 'rounded-none text-regular p-6 border-muted-foreground border-[1px] hover:bg-accent-base hover:text-white')}>View Plans</Link>
   </div>
  </div>
- <div className=" flex flex-col justify-center  relative">
+ <div className=" flex flex-col justify-center  relative h-[348px] md:h-full ">
  <ImageTemplate
  size="h-full absolute w-full"
  source = "https://images.unsplash.com/photo-1491975474562-1f4e30bc9468?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"

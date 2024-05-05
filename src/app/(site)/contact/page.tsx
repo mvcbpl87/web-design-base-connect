@@ -5,12 +5,12 @@ import { AvatarTemplate } from "@/components/global/avatar-template";
 
 export default function ContactPage(){
  return(
- <div className="relative py-20 px-20 space-y-[10rem] ">
-  <div className="grid grid-cols-2 gap-[1rem] relative">
+ <div className="relative py-20 px-10 md:px-20 space-y-[10rem] ">
+  <div className="grid md:grid-cols-2 gap-[1rem] relative">
     <div className="h-full">
-      <div className="flex flex-col space-y-[2rem] pr-[10rem] sticky top-20">
-       <h2 className="text-desktop-h2 leading-desktop-h2 font-bold">Get in Touch</h2>
-       <p className="text-lg">
+      <div className="flex flex-col space-y-[2rem] pb-20 md:pb-0 md:pr-[10rem] sticky top-20">
+       <h2 className="text-mobile-h2 leading-mobile-h2 md:text-desktop-h2 md:leading-desktop-h2 font-bold">Get in Touch</h2>
+       <p className="text-base md:text-lg">
            If you have any questions or want to get onboarded. 
            Leave your contact details and our team will get 
            back to you as soon as possible. <br/><br/>
@@ -44,11 +44,11 @@ function ReviewCards(){
    source="/assets/vicprop.svg"
    alt="Collabs-logo"
   />
-  <h5 className="text-desktop-h5 leading-h5 font-bold text-center">
+  <h5 className="text-mobile-h5 leading-mobile-h5 md:text-desktop-h5 md:leading-h5 font-bold text-center">
    We worked with Grace and she is an invaluable addition to any real estate firm seeking an operations specialist. 
    Her instant communication & proficiency in both English and Mandarin further enhance her value. 
   </h5>
-  <div className="flex flex-col items-center gap-2">
+  <div className="flex flex-col items-center gap-2 text-center">
     <AvatarTemplate
      source="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
      name="avtar"

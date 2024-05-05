@@ -34,10 +34,10 @@ const FaqsList:FaqsListType[] = [
 
 export function SiteFaqs(){
  return(
- <div className="relative h-full pb-20 grid grid-cols-[500px_1fr] gap-[4rem] justify-center items-center">
+ <div className="relative h-full md:pb-20 grid md:grid-cols-[500px_1fr] gap-[4rem] justify-center items-center">
   <div className="space-y-[1rem]">
-    <h2 className="text-desktop-h2 leading-desktop-h2">FAQs</h2>
-    <p className="text-lg">
+    <h2 className="text-mobile-h2 leading-mobile-h2 md:text-desktop-h2 md:leading-desktop-h2">FAQs</h2>
+    <p className="text-base md:text-lg">
      Find answers to common pricing-related questions 
      to better understand our value proposition.
     </p>
@@ -65,7 +65,7 @@ function AccordionFAQ({list}:AccordionFAQProps){
     key = {`faqs-${index+1}`}
     value={`item-${index+1}`} 
     className="border-black/20 dark:border-white/20">
-    <AccordionTrigger className="text-lg font-bold px-4">{item.question}</AccordionTrigger>
+    <AccordionTrigger className="text-base md:text-lg font-bold px-4">{item.question}</AccordionTrigger>
     <AccordionContent className="px-4 text-base my-4 italic text-muted-foreground/50">
       {item.answer}
     </AccordionContent>

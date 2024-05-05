@@ -4,7 +4,7 @@ import "./globals.css";
 import { LayoutWrapper } from "@/components/layout/LayoutWrapper";
 import NavigationBar from "@/components/navigation";
 import NavigationFooter from "@/components/navigation/footer";
-import MobileNav from "@/components/navigation/mobile-nav";
+import MobileNav from "@/components/navigation/mobile-nav2";
 // const inter = Inter({ subsets: ["latin"] });
 const font = Roboto({
   weight: '400',
@@ -27,7 +27,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={font.className}>
-        <LayoutWrapper className="font-custom">
+        <LayoutWrapper>
+        {/* <div className="bg-green-200 "> */}
+          {/* <div className="fixed bg-yellow-300 z-[100] py-2 inset-0 w-full"> navigation bar
+          <div className="w-full bg-red-200">
+          test
+          </div>
+          </div> */}
+        
+         
+        {/* </div> */}
         <MobileNav/>
         <NavigationBar/>
         {children}

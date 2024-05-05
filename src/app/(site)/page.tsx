@@ -5,13 +5,13 @@ import SiteSection4 from "@/components/site/section-4";
 import SiteSection5 from "@/components/site/section-5";
 export default function Home() {
   return (
-  <>
+  <section className="flex flex-col gap-[4rem] ">
   <SiteSection1/>
   <SiteSection2/>
   <SiteSection3/>
   <SiteSection4/>
   <SiteSection5/>
-  </>
+  </section>
   );
 
 }
