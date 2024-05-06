@@ -25,7 +25,7 @@ export function SiteGraphic({className}:Props){
  const style = cn("relative h-full grid grid-cols-1 md:grid-cols-3 gap-[2rem] justify-center items-center", className)
  return(
  <div className={style}>
-  <div className="md:col-span-2 flex flex-col text-start md:text-center gap-4 pb-10 md:pr-10 md:pb-0">
+  <div className="md:col-span-2 flex flex-col text-start  gap-4 pb-10 md:pr-10 md:pb-0">
     <h3 className="text-mobile-h3 leading-mobile-h3  md:text-desktop-h3 md:leading-desktop-h3 font-bold ">
         Your money goes much further with a virtual assistant.
     </h3>

@@ -49,7 +49,9 @@ export default function MobileNav(){
     </div>
    
     </div>
-    <MobileNavContent className={cn({
+    <MobileNavContent 
+     onClick={()=>setOpenNav(!openNav)}
+     className={cn({
         'hidden': !openNav
     })}/>
  </div>
@@ -58,8 +60,9 @@ export default function MobileNav(){
 
 type MobileNavContentProps = {
     className?:string
+    onClick?:()=>void
 }
-function MobileNavContent({className}:MobileNavContentProps){
+function MobileNavContent({className, onClick}:MobileNavContentProps){
  const style = cn("border-border border-t-[1px] h-full", className)
  return(
  <div className={style}>
@@ -67,6 +70,7 @@ function MobileNavContent({className}:MobileNavContentProps){
    <div className="flex flex-col h-full justify-evenly items-center ">
     { _routes.map( (item, index)=>(
       <Link 
+      onClick={onClick}
        className="text-lg"
        href={item.route} 
        key={`link-${index+1}`}>

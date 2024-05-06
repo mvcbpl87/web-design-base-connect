@@ -3,6 +3,7 @@ import SiteBanner from "./site-components/site-banner";
 import SiteStory from "./site-components/site-story";
 import SiteValues from "./site-components/site-values";
 import { MetricTable } from "@/components/global/metric-table";
+import SiteReview from "./site-components/site-review";
 
 
 export default function AboutUsPage(){
@@ -12,8 +13,8 @@ export default function AboutUsPage(){
   <div className="px-10  md:px-20 space-y-[4rem] md:space-y-[6rem] ">
    <SiteStory className="pb-20"/>
    <SiteValues className="pb-20"/>
+   <SiteReview className="pb-20"/>
    <MetricTable/>
-   {/* <MetricTable className="pb-20"/> */}
    <GettingStartedBanner className=" pb-20"/>
   </div>
  

@@ -13,7 +13,7 @@ export const Icons = {
     X:'/assets/icons/media/X.svg'
 }
 
-export const PricingList = [
+export const PricingListOld = [
  {
     title:'Individuals / Startups',
     description: '24 hHours of Task Work',
@@ -39,3 +39,21 @@ export const PricingList = [
     priceId: ''
  }
 ]
+export const PricingList = [
+   {
+      title:'1-Week Trial',
+      description: 'Experience our service',
+      price:'Free',
+      duration:'',
+      features: ['Experience our full service', 'No Strings Attached', 'All we ask is a testimonial in return'],
+      priceId: ''
+   },
+   {
+      title:'Full-Time',
+      description: 'Full-Time Assistant',
+      price:'$1,800',
+      duration:'',
+      features: ['Dedicated Assistant', 'Expertly matched to you', 'Switch plans / cancel anytime', 'Good for Businesses / Companies', 'Like a Full-Time employe'],
+      priceId: ''
+   },
+  ]

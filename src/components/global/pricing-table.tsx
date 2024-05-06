@@ -10,7 +10,7 @@ import { Button } from "../ui/button";
 
 export default function PricingTable(){
  return(
- <div className="grid md:grid-cols-3 gap-[2rem]">
+ <div className="grid md:grid-cols-2 gap-[2rem]">
   { PricingList.map( (item,index) => (
     <Card key ={`price-${index+1}`} className="border-black/90 rounded-none dark:border-white" >
      <CardHeader>
@@ -19,7 +19,9 @@ export default function PricingTable(){
      <div className="flex flex-col justify-center items-center">
          <h1 className="text-mobile-h1 leading-mobile-h1 md:text-desktop-h1 md:leading-desktop-h1 font-bold">
              {item.price}
-             <span className="text-mobile-h4 md:text-desktop-h4">/mo</span>
+             { item.price !== 'Free' &&   <span className="text-mobile-h4 md:text-desktop-h4">/mo</span>
+             }
+           
          </h1>
          <p className="text-regular">{item.description}</p>
      </div>

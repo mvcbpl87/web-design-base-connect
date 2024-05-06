@@ -65,7 +65,7 @@ function AccordionFAQ({list}:AccordionFAQProps){
     key = {`faqs-${index+1}`}
     value={`item-${index+1}`} 
     className="border-black/20 dark:border-white/20">
-    <AccordionTrigger className="text-base md:text-lg font-bold px-4">{item.question}</AccordionTrigger>
+    <AccordionTrigger className="text-start text-base md:text-lg font-bold px-4">{item.question}</AccordionTrigger>
     <AccordionContent className="px-4 text-base my-4 italic text-muted-foreground/50">
       {item.answer}
     </AccordionContent>
