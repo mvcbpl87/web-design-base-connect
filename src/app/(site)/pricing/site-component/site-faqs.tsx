@@ -5,6 +5,7 @@ import {
     AccordionItem,
     AccordionTrigger,
 } from "@/components/ui/accordion";
+import { cn } from "@/lib/utils";
 type FaqsListType = {
     question:string,
     answer:string
@@ -31,10 +32,13 @@ const FaqsList:FaqsListType[] = [
         'answer': 'Stay tuned'
     }
 ]
-
-export function SiteFaqs(){
+type Props = {
+ className?:string
+}
+export function SiteFaqs({className}:Props){
+ const style = cn("relative h-full grid md:grid-cols-[500px_1fr] gap-[4rem] justify-center items-center", className)
  return(
- <div className="relative h-full md:pb-20 grid md:grid-cols-[500px_1fr] gap-[4rem] justify-center items-center">
+ <div className={style}>
   <div className="space-y-[1rem]">
     <h2 className="text-mobile-h2 leading-mobile-h2 md:text-desktop-h2 md:leading-desktop-h2">FAQs</h2>
     <p className="text-base md:text-lg">

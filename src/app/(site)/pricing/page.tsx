@@ -8,7 +8,7 @@ import { MetricTable } from "@/components/global/metric-table";
 export default function Page(){
  return(
  <div className="relative py-20 px-10 md:px-20 space-y-[6rem] ">
- <div className="h-full md:pb-20 space-y-[4rem]">
+ <div className="h-full pb-20 space-y-[4rem]">
   <TitleCard
     className="justify-center items-center"
     badge="Flexible price plans & packages"
@@ -17,9 +17,9 @@ export default function Page(){
    /> 
     <PricingTable/>
  </div>
-   <SiteGraphic/>
+   <SiteGraphic className="pb-20"/>
    <MetricTable/>
-   <SiteFaqs/>   
+   <SiteFaqs className="pb-20"/>   
    <GettingStartedBanner className="pb-20"/>
  </div>
  )

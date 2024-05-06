@@ -17,21 +17,20 @@ export default function PricingTable(){
      <div className=" py-6">
      <div className="text-mobile-h6 md:text-desktop-h6 font-bold text-center">{item.title}</div>
      <div className="flex flex-col justify-center items-center">
-         <h1 className="text-mobile-h1 leading-mobile-h1 md:text-desktop-h1 md:leading-desktop-h1 font-bold">
+         <h1 className=" text-mobile-h1 leading-mobile-h1 md:text-desktop-h1 md:leading-desktop-h1 font-bold">
              {item.price}
-             { item.price !== 'Free' &&   <span className="text-mobile-h4 md:text-desktop-h4">/mo</span>
+             { item.price !== 'Free' ?  <span className="text-mobile-h4 md:text-desktop-h4">/mo</span> : <span className="text-mobile-h4 md:text-desktop-h4"></span>
              }
-           
          </h1>
          <p className="text-regular">{item.description}</p>
      </div>
      </div>
      </CardHeader>
-     <CardContent className="flex flex-col md:h-[14rem] space-y-[1rem] px-10">
+     <CardContent className="flex flex-col md:h-[14rem] gap-[1rem] px-10 ">
      {item.features.map( (feature,index)=>(
          <div
           key = {`feature-${index+1}`}
-          className="flex items-center gap-2 text-regular">
+          className="flex items-center gap-x-2 text-regular">
              <Check className="color-black" size={15}/>
              <span>{feature}</span>
          </div>)
