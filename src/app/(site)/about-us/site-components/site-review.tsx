@@ -85,7 +85,7 @@ function ReviewCard({
  position,
  logo
 }:ReviewCardProps){
- const style = cn('w-full h-[480px] md:h-[300px] md:w-[768px] flex flex-col md:justify-between items-center gap-[1rem]', className);
+ const style = cn('w-full h-[520px] md:h-[300px] md:w-[768px] flex flex-col md:justify-between items-center gap-[1rem]', className);
  
  const RateStar = ({ratings}:{ratings:number}) => <div className="flex gap-2">
  { Array.from({length:ratings}).map((_,index)=> (
