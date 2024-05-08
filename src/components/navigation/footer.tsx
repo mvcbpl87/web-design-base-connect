@@ -47,7 +47,7 @@ export default function NavigationFooter(){
     </div>
     <div className="flex items-center gap-4">
     { _socmedLinkList.map((media, index)=>(
-      <Link href={media.path} key ={`linkMedia-${index+1}`}>
+      <Link href={media.path} key ={`linkMedia-${index+1}`} target="_blank">
        <ImageTemplate
         source={media.icon}
         alt="media-icon"
