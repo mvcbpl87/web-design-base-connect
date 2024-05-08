@@ -28,15 +28,6 @@ export default function RootLayout({
     <html lang="en">
       <body className={font.className}>
         <LayoutWrapper>
-        {/* <div className="bg-green-200 "> */}
-          {/* <div className="fixed bg-yellow-300 z-[100] py-2 inset-0 w-full"> navigation bar
-          <div className="w-full bg-red-200">
-          test
-          </div>
-          </div> */}
-        
-         
-        {/* </div> */}
         <MobileNav/>
         <NavigationBar/>
         {children}

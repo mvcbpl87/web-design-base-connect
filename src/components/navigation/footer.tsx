@@ -3,6 +3,29 @@ import { ImageTemplate } from "../global/image-template"
 import { Icons } from "@/lib";
 import { Separator } from "@/components/ui/separator"
 
+// Icons.Facebook, Icons.Instagram, Icons.X, Icons.LinkedIn
+const _socmedLinkList = [
+ {
+  name: 'Facebook',
+  path: '#',
+  icon: Icons.Facebook
+ },
+ {
+  name: 'Instagram',
+  path:'#',
+  icon: Icons.Instagram
+ },
+ {
+  name: 'X',
+  path: 'https://twitter.com/baseconnect_',
+  icon:Icons.X
+ },
+ {
+  name: 'LinkedIn',
+  path: 'https://www.linkedin.com/company/baseconnectai/',
+  icon: Icons.LinkedIn
+ }
+]
 export default function NavigationFooter(){
  return(
  <div className="relative p-10 md:p-20">
@@ -23,10 +46,10 @@ export default function NavigationFooter(){
     )} 
     </div>
     <div className="flex items-center gap-4">
-    { [Icons.Facebook, Icons.Instagram, Icons.X, Icons.LinkedIn].map((media, index)=>(
-      <Link href="#" key ={`linkMedia-${index+1}`}>
+    { _socmedLinkList.map((media, index)=>(
+      <Link href={media.path} key ={`linkMedia-${index+1}`}>
        <ImageTemplate
-        source={media}
+        source={media.icon}
         alt="media-icon"
        />
       </Link>)

@@ -24,8 +24,8 @@ const _routes = [
 ]
 export default function MobileNav(){
  const [openNav, setOpenNav] = useState(false);
- const style = cn("bg-background w-full h-full z-[100] md:hidden transition ease-in-out transition-all",{
-    'fixed': openNav == true
+ const style = cn("bg-background w-full z-[100] md:hidden ",{
+    'fixed top-0 bottom-0 ': openNav == true
  })
  return(
  <div className={style}>
@@ -52,7 +52,7 @@ export default function MobileNav(){
     <MobileNavContent 
      onClick={()=>setOpenNav(!openNav)}
      className={cn({
-        'hidden': !openNav
+        'hidden ': !openNav,
     })}/>
  </div>
  )
@@ -63,7 +63,7 @@ type MobileNavContentProps = {
     onClick?:()=>void
 }
 function MobileNavContent({className, onClick}:MobileNavContentProps){
- const style = cn("border-border border-t-[1px] h-full", className)
+ const style = cn("border-border border-t-[1px] h-full transition-all duration-500 ease-in-out  ", className)
  return(
  <div className={style}>
   <nav className=" h-[204px] ">
